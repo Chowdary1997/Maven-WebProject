@@ -24,7 +24,7 @@ node{
 '''
    }*/
    stage('Deploy to Tomcat'){
-     bat "copy target\\JenkinsPipeline.war \"${tomcatWeb}\\JenkinsPipeline.war\""
+     bat "copy target\\maven-stanalone-application-0.0.1-SNAPSHOT.jar \"${tomcatWeb}\\maven-stanalone-application-0.0.1-SNAPSHOT.jar\""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
